@@ -1,0 +1,133 @@
+.nav__bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.2rem 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to right,#fff, var(--background-color), #acb2c3);
+    z-index: 2;
+
+}
+
+.nav__items ul li{
+    display: inline;
+    margin-right: 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    transition: var(--smooth-transition);
+}
+
+.nav__items a{
+    color: #000;
+    padding-bottom: 5px;
+    
+}
+.nav__items a.active{
+    border-bottom: 3px solid var(--primary-color);
+}
+.nav__items a:hover{
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.my__logo a h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #000;
+
+}
+.my__logo{
+    cursor: pointer;
+    transform: translateX(-300%);
+    animation: swing 0.2s forwards ease-in;
+}
+@keyframes swing{
+    to{
+        transform: translateX(0);
+    }
+}
+.my__logo .dot{
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-left: 4px;
+}
+
+.contact-btn{
+    padding: 1rem 2rem;
+    color: #e1e1e1;
+    background: #333;
+    border: none;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    border-radius: 30px;
+    transition: var(--smooth-transition);
+}
+.contact-btn:hover{
+    transform: scale(1.1);
+    background: var(--icon-bgrc);
+    color: #333;
+    
+}
+.mobile__nav{
+    display: none;
+}
+
+@media only screen and (max-width: 700px){
+    .desktop__nav{
+        display: none;
+
+    }
+    .mobile__nav{
+        display: flex;
+        align-items: center;
+        
+    }
+    .nav__items ul{
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        top: 90px;
+        right: 0;
+        width: 100%;
+        background: rgba(24, 24, 24, 0.623);
+        backdrop-filter: 5px blur;
+        border-top: 3px solid var(--primary-color);
+        z-index: 2;
+    }
+    
+    .nav__items ul li{
+        margin-left: 12%;
+        line-height: 2.5;
+       
+    }
+    .nav__items a{
+        color: #fff;
+        transition: var(--smooth-transition);
+    }
+    .nav__items a:hover{
+        color: var(--primary-color);
+        border-bottom: none;
+        
+    }
+    .hamburger{
+        position: absolute;
+        right:10%;
+        cursor: pointer;
+        color: #fff;
+
+    }
+    .my__logo{
+        flex-basis: 40%;
+        margin-left:-30px ;
+    }
+    
+
+}
+@media only screen and (max-width: 580px ){
+    .contact-btn{
+        display: none;
+    }
+}

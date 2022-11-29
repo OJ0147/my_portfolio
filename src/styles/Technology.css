@@ -1,0 +1,60 @@
+.tech-container{
+    background: #fff;
+}
+.tech-box{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.tech-box h2{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+.tech-box p{
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 200;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+.tech-icons{
+    display: grid;
+    place-content: flex-start;
+    margin-top: 40px;
+    
+}
+
+.tech-icons ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tech-icons ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px
+}
+.techcons{
+    color: var(--primary-color);
+    
+}
+
+@media only screen and (max-width: 428px){
+    .tech-icons{
+        place-content: center;     
+        
+    }
+    .tech-box h2{
+        font-size: 1.5;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .tech-box p{
+        font-size: 1.2rem;
+        text-align: center;
+       
+    }
+
+}

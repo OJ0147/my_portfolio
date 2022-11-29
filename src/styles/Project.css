@@ -1,0 +1,156 @@
+#Project{
+    background: linear-gradient(to right,#fff, var(--background-color), #acb2c3);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:  50px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.project-container{
+    max-width: 1200px;
+    margin: 85px auto;
+    padding: 50px;
+    
+}
+.project-container h2{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0 0 70px 20px;
+}
+
+.project-card{
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    background: transparent;
+    border-top: 1px solid #333;
+}
+
+.project-img{
+    max-width: 100%;
+    position: relative;
+
+}
+
+.project-img img{
+    width: 100%;
+    display: block;
+}
+.project-img::after{
+    content: "Click to view";
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    color: #383838;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto Flex', sans-serif;
+    
+}
+.project-card h3{
+    padding-top: 10px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.project-card p{
+   
+    margin: 1rem auto;
+    line-height: 1.6;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.project-btn{
+    max-width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.project-btn .title{
+    flex-basis: 60%;
+}
+.project-btn .repo-container{
+    padding: 10px;
+    align-self: flex-start; 
+}
+.arrow-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.project-btn a{
+    padding: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background:var(--primary-color) ;
+    transition: var(--smooth-transition);
+}
+
+
+
+.project-btn a:hover{
+    background: #000;
+}
+
+@media only screen and (max-width: 850px){
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    .project-card{
+        max-width: 600px;
+    }
+    .project-container h2{
+       text-align: center;
+       padding: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 770px){
+   
+    .project-card{
+        max-width: 530px;
+    }
+    .project-container{
+        padding: 25px;
+        
+    }
+}
+
+@media only screen and (max-width: 428px){
+    .project-btn{
+        max-width: 100%;
+    }
+    .project-container{
+        padding: 0 25px 25px 25px;
+        margin: 50px auto;
+    }
+    .arrow-icon{
+        width: 20px;
+        height: 15px;
+    }
+    .project-btn a{
+        padding: 17px;
+    }
+    .project-container h2{
+        font-size: 1.5;
+        padding: 35px 0;
+    }
+    .project-card h3{
+        font-size: 1.2rem;
+    }
+   
+
+}

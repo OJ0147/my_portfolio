@@ -1,0 +1,190 @@
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 100px auto;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+    border-radius:30px;
+    overflow: hidden;
+    
+}
+
+.about-image{
+    flex-basis: 50%;
+    background:  url(../media/about-img.jpeg);
+    background-position: right center;
+    background-size: cover;
+    
+   
+}
+
+
+.about-me{
+    padding: 50px 0 50px;
+    flex-basis: 50%;
+}
+.about-me .about-text{
+    max-width: 80%;
+    margin: 1.4rem auto;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 200;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    
+}
+.about-me h2{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.highlights{
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 1.2rem;
+    font-weight: 300;
+    list-style-type: circle;
+    border-bottom: 2px solid var(--background-color);
+    transition: var(--smooth-transition);
+}
+
+.highlights:hover{
+    border-bottom: 2px solid var(--primary-color);
+}
+.about-me h3{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 80%;
+    margin: 5rem auto 1rem;
+}
+
+.about-btn{
+    max-width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-mail{
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 200;
+    padding: 1.2rem 1.7rem;
+    color: #FFF;
+    background: var(--button-gradient);
+    border-radius: 0.9rem;
+    transition: var(--smooth-transition)
+}
+.contact-mail:hover{
+    transform: scale(1.05);
+}
+
+.resume{
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 200;
+    padding: 1.2rem 1.7rem;
+    background: var(--hover-color);
+    color: #fff;
+    border-radius: 0.9rem;
+    transition: var(--smooth-transition)
+}
+.resume:hover{
+    background: #000;
+    
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    .about-container{
+        max-width: 900px;
+    
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+    .about-me .about-text{
+        font-size: 1rem;
+    }
+    .about-container{
+        max-width: 800px;
+    }
+    .about-me{
+        padding: 0;
+    }
+    .about-btn{
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .about-container{
+        flex-direction: column;
+        padding: 50px;
+        max-width: 600px;
+        margin: 45px auto;
+    }
+    .about-me .about-text{
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+    .highlights{
+        font-size: 1rem;
+        margin: 0;
+    }
+    .about-image{
+        display: none;
+    }
+    .about-me h3{
+        margin: 3rem 0 1.3rem;
+    }
+    .about-btn{
+        max-width: 400px;
+    }
+}
+@media only screen and (max-width: 780px){
+    .about-container{
+        max-width: 530px;
+    
+    }
+}
+@media only screen and (max-width: 530px){
+    .about-container{
+        max-width: 400px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .about-container{
+        max-width: 340px;
+        padding: 25px;
+    }
+    .about-btn{
+        max-width: 300px;
+    }
+    
+    .contact-mail{
+        padding: 1rem 1.3rem;
+    }
+    .resume{
+        padding: 1rem 1.3rem;
+        
+    }
+}
+@media only screen and (max-width: 320px){
+    .about-container{
+        max-width: 300px;
+        padding: 20px;
+    }
+    .about-me h3{
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .highlights{
+        list-style-type: none;
+        font-size: 14px;
+    }
+}
