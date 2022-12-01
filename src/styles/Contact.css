@@ -1,8 +1,13 @@
 
 #Contact{
-    background: linear-gradient(to right,#fff, var(--background-color), #acb2c3);
+    /* background: linear-gradient(to right,#fff, var(--background-color), #acb2c3); */
+    background: url(../media/office1.png);
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
     padding-top: 50px;
     margin-top: 100px;
+    color: #fff;
 }
 .contact-container{
     display: flex;
@@ -14,13 +19,13 @@
 }
 .contact-ops .ops{
     margin-bottom: 30px;
-    border-top: 2px solid #333;
+    border-top: 2px solid #fff;
     padding-top: 30px;
     width: 300px;
 }
 
 .contact-ops .ops a{
-    color: #333;
+    color: #fff;
     font-family: 'Roboto Flex', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -38,6 +43,10 @@
     border: 0;
     border-bottom: 1px solid #000;
     outline: none;
+    background: transparent;
+}
+input::placeholder, textarea::placeholder{
+    color: #000;
 }
 #Contact h3{
     font-size: 1.8rem;
@@ -45,13 +54,13 @@
     font-family: 'Bai Jamjuree', sans-serif;
     margin-bottom: 20px;
     text-align: center;
-    
-
 }
 form{
     padding: 30px;
-    background-color: #fff;
     border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
 button{
     width: 100%;
@@ -74,15 +83,15 @@ button:hover{
     align-items: center;
     justify-content: space-around;
     max-width: 1200px;
-    border-top: 2px solid black;
+    border-top: 2px solid #fff;
     padding: 25px 0 50px;
     margin: 0 auto;
 }
 .footer p{
     font-family:'Shadows Into Light', cursive ;
-    font-weight: 400;
-    font-size: 1rem;
-    color: rgb(2, 2, 138);
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-color);
 }
 @media only screen and (max-width: 1200px){
     .contact-container{

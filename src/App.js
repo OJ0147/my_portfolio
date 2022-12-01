@@ -1,4 +1,4 @@
-import { SiContactlesspayment } from 'react-icons/si';
+
 import './App.css'
 import About from './components/About';
 import Header from './components/Header';

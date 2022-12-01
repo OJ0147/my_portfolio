@@ -33,16 +33,9 @@ const Project = () => {
                         
                         
                         <div className="project-img">
-                        <a href={site} target='_blank' rel='noreferrer'>  <img src={image} alt="" /></a>
+                        <a href={site} target='_blank' rel="noreferrer" >  <img src={image} alt="projectimg" /></a>
                         </div>
 
-                        
-                        
-                        
-                        {/* <div className="project-btn">
-                            <a href={site} target='_blank' rel='noreferrer'>Demo <CgWebsite size={20}/></a>
-                            <a href={code} target='_blank' rel='noreferrer'>Github <AiFillGithub size={20}/></a>
-                        </div> */}
 
                     </div>
                 ))}

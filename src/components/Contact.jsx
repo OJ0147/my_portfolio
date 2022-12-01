@@ -34,16 +34,16 @@ const Contact = () => {
   return (
     <div id='Contact'>
         <h3>Contact Me</h3>
-        <div className="contact-container" data-aos='fade_right'>
-            <div className="contact-ops">
+        <div className="contact-container" >
+            <div className="contact-ops" data-aos='fade_right'>
                 <div className="ops">
-                    <a href="mailto:silasojugo@gmail.com" target='_blank'><BiMessageDots size={25}/> silasojugo@gmail.com</a>
+                    <a href="mailto:silasojugo@gmail.com" target='_blank' rel="noreferrer" ><BiMessageDots size={25}/> silasojugo@gmail.com</a>
                 </div>
                 <div className="ops">
-                    <a href="tel:+234-902-532-8516" target='_blank'><BiPhoneCall size={25}/> +234 902 532 8516</a>
+                    <a href="tel:+234-902-532-8516" target='_blank' rel="noreferrer" ><BiPhoneCall size={25}/> +234 902 532 8516</a>
                 </div>
                 <div className="ops">
-                    <a href="#" target='_blank'><CiLinkedin size={25}/> Linkedin</a>
+                    <a href="#" target='_blank' rel="noreferrer" ><CiLinkedin size={25}/> Linkedin</a>
                 </div>
 
             </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                         <textarea name="message" id="message" cols="30" rows="0" placeholder='Message'></textarea>
                     </div>
                     
-                    <button type="submit">Send</button>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </div>
