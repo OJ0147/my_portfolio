@@ -20,7 +20,6 @@ const Header = () => {
   
     <header id='Home'>
       
-
       <div className="header__container">
         
         <div className="header__content">
@@ -47,7 +46,6 @@ const Header = () => {
             </motion.div>
 
             <motion.div initial={iconFrom} animate={iconTo} transition={{delay: 0.45}} className="socials">
-              <p className='check-text'>Check Me Out</p>
               <a href="https://www.linkedin.com/in/silas-ojugo-240a8a258/" target='_blank' rel="noreferrer" > <CiLinkedin size={'30'} className='social-icons'/> </a>
               <a href="http://www.instagram.com/im_ojhay/" target='_blank' rel="noreferrer" > <CiInstagram size={'30'}  className='social-icons'/> </a>
               <a href="https://twitter.com/SilasOjugo" target='_blank' rel="noreferrer" > <CiTwitter size={'30'}  className='social-icons'/> </a>
@@ -65,6 +63,10 @@ const Header = () => {
 
         </div>
       </div>
+        
+     
+
+  
     </header>
   )
 }

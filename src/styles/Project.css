@@ -94,12 +94,9 @@
     padding: 25px;
     border-radius: 50%;
     color: #fff;
-    background:var(--primary-color) ;
+    background:var(--primary-color);
     transition: var(--smooth-transition);
 }
-
-
-
 .project-btn a:hover{
     background: #000;
 }
