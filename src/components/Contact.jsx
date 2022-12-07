@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import Footer from './Footer'
 import '../styles/Contact.css'
 import {BiMessageDots, BiPhoneCall} from 'react-icons/bi'
+import {FaWhatsapp} from 'react-icons/fa'
 import { CiLinkedin} from "react-icons/ci"; 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -37,13 +38,16 @@ const Contact = () => {
         <div className="contact-container" >
             <div className="contact-ops" data-aos='fade_right'>
                 <div className="ops">
-                    <a href="mailto:silasojugo@gmail.com" target='_blank' rel="noreferrer" ><BiMessageDots size={25}/> silasojugo@gmail.com</a>
+                    <a href="mailto:silasojugo@gmail.com" target='_blank' rel="noreferrer" ><span><BiMessageDots size={25}/> </span> silasojugo@gmail.com</a>
                 </div>
                 <div className="ops">
-                    <a href="tel:+234-902-532-8516" target='_blank' rel="noreferrer" ><BiPhoneCall size={25}/> +234 902 532 8516</a>
+                    <a href="tel:+234-902-532-8516" target='_blank' rel="noreferrer" ><span><BiPhoneCall size={25}/></span>  +234 902 532 8516</a>
                 </div>
                 <div className="ops">
-                    <a href="#" target='_blank' rel="noreferrer" ><CiLinkedin size={25}/> Linkedin</a>
+                    <a href="https://www.linkedin.com/in/silas-ojugo-240a8a258/" target='_blank' rel="noreferrer" > <span><CiLinkedin size={25}/></span>  Linkedin</a>
+                </div>
+                <div className="ops">
+                    <a href="https://wa.me/message/BZI5YW4TYI7JO1" target='_blank' rel="noreferrer" > <span><FaWhatsapp size={25}/></span> Whatsapp</a>
                 </div>
 
             </div>

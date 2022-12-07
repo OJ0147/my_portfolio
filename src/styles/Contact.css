@@ -20,8 +20,8 @@
 }
 .contact-ops .ops{
     margin-bottom: 30px;
-    border-top: 2px solid #fff;
-    padding-top: 30px;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
     width: 300px;
 }
 
@@ -29,7 +29,23 @@
     color: #fff;
     font-family: 'Roboto Flex', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    transition: var(--smooth-transition);
+}
+
+.contact-ops .ops a span{
+    margin-right: 15px;
+    padding:  12px 15px;
+    background: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(5px);
+    color: var(--primary-color);
+    border-radius: 50%; 
+}
+.contact-ops .ops a:hover{
+    transform: scale(1.2);
+
 }
 
 .contact-form .form-control{
@@ -60,7 +76,6 @@ form{
     padding: 30px;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
 }
 button{
@@ -136,12 +151,15 @@ button:hover{
 
 @media only screen and (max-width: 600px){
     .contact-container{
-       flex-direction: column;
+       flex-direction: column-reverse;
         
     }
     .footer{
         max-width: 400px;
         
+    }
+    .contact-ops .ops{
+        margin-top: 35px;
     }
 }
 @media only screen and (max-width: 428px){
