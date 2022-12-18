@@ -39,7 +39,7 @@ const About = () => {
                 <div className="about-btn">
                     <a href="mailto:silasojugo@gmail.com" className="contact-mail" target='_blank' rel='noreferrer'>Hire Me <TbHeartHandshake/> </a>
 
-                    <a href="/OJUGO_SILAS_Resume.PDF" download={true} className="resume">Resume <HiOutlineDocumentSearch/> </a>
+                    <a href="/Ojugo_Silas_resume.pdf" download={true} className="resume">Resume <HiOutlineDocumentSearch/> </a>
 
                 </div>
             </div>

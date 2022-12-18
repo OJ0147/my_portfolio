@@ -33,7 +33,10 @@ const Project = () => {
                         
                         
                         <div className="project-img">
-                        <a href={site} target='_blank' rel="noreferrer" >  <img src={image} alt="projectimg" /></a>
+                            <a href={site} target='_blank' rel="noreferrer" >  <img src={image} alt="projectimg" /></a>
+                            <div className="demo-overlay">
+                                <h1>View</h1>
+                            </div>
                         </div>
 
 
