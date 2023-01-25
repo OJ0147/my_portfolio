@@ -7,7 +7,7 @@ export const data = [
         description: "A crypto currency trading app creacted with react js. fetched data from api.",
         image:'/images/image-tradexpress.jpg',
         code: 'https://github.com/OJ0147/tradexpress',
-        site: 'https://creative-fudge-146360.netlify.app/'
+        site: 'https://tradexpressng.netlify.app/'
     },
     {
         id: "2",
