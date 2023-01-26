@@ -31,6 +31,6 @@ export const data = [
         description: "landing page created with react js, an app for saving users favorite website",
         image:'/images/image-bookmark.jpg',
         code: 'https://github.com/OJ0147/bookmark',
-        site: 'https://frolicking-praline-afc58c.netlify.app/'
+        site: 'https://bookmarkui.netlify.app/'
     },
 ]
