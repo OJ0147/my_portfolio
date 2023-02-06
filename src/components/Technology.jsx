@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/Technology.css'
 import htmllogo from '../media/html5.png';
 import csslogo from '../media/CSS3.png';
@@ -12,13 +12,66 @@ import reduxlogo from '../media/redux.png';
 import reactlogo from '../media/reactjs.png';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect } from 'react'
+import { motion } from 'framer-motion';
 
 
 const Technology = () => {
     useEffect(()=>{
         Aos.init({duration:2000})
     }, [])
+
+    const heartVariants = {
+        hover: {
+          scale: 1.1,
+          transition: {
+            duration: 0.3,
+            yoyo: Infinity
+          }
+        }
+    };
+    const techdata=[
+        {
+            logo : htmllogo, 
+            text : 'html5'
+        },
+        {
+            logo : csslogo, 
+            text : 'CSS'
+        },
+        {
+            logo : javascriptlogo, 
+            text : 'javaScript'
+        },
+        {
+            logo : bootstraplogo, 
+            text : 'bootstrap'
+        },
+        {
+            logo : tailwindlogo, 
+            text : 'tailwind'
+        },
+        {
+            logo : reduxlogo, 
+            text : 'redux'
+        },
+        {
+            logo : reactlogo, 
+            text : 'reactjs'
+        },
+        {
+            logo : gitlogo, 
+            text : 'Git'
+        },
+        {
+            logo : pythonlogo, 
+            text : 'python'
+        },
+        {
+            logo : djangologo, 
+            text : 'Django'
+        },
+    ]
+
   return (
     <div className='tech-container' id='Technology' data-aos='fade-up'>
 
@@ -28,46 +81,20 @@ const Technology = () => {
             <p>Here are some technologies i am experienced with</p>
                     
             <div className="tech-grid">
-                <div className='tech-imgbox'>
-                    <img src={htmllogo} alt="html" />
-                    <small>Html5</small>
-                </div>
-                <div className='tech-imgbox'>
-                    <img src={csslogo} alt="css" /> 
-                    <small>CSS</small>
-                </div>
-                <div className='tech-imgbox'>
-                    <img src={javascriptlogo} alt="js" /> 
-                    <small>Javascript</small>
-                </div>
-                <div className='tech-imgbox'>
-                    <img src={bootstraplogo} alt="bootstrap" />
-                    <small>Bootstrap</small>
-                </div>
-                <div className='tech-imgbox'>
-                    <img src={tailwindlogo} alt="tailwind" /> 
-                    <small>Tailwind</small>
-                </div>
-                <div className='tech-imgbox'>
-                    <img src={reduxlogo} alt="redux" />
-                    <small>Redux</small>
-                </div>
-                <div className='tech-imgbox'>
-                    <img src={reactlogo} alt="react" /> 
-                    <small>Reactjs</small>
-                </div>
-                <div className='tech-imgbox'>
-                    <img src={gitlogo} alt="git" /> 
-                    <small>Git</small>
-                </div>
-                <div className='tech-imgbox'>
-                    <img src={pythonlogo} alt="python" />
-                    <small>Python</small>
-                </div>
-                <div className='tech-imgbox'>
-                    <img src={djangologo} alt="django" /> 
-                    <small> Django</small>
-                </div>        
+                {techdata.map((tech, index)=>{
+                    const{logo, text}=tech
+                    return(
+                        <motion.div 
+                            key={index}
+                            className='tech-imgbox'         
+                            variants={heartVariants}
+                            whileHover="hover">
+                                <img src={logo} alt="techlogo" /> 
+                                <small>{text} </small>
+                        </motion.div>
+                    )
+                })}
+                
             </div>
         </div>
 

@@ -8,29 +8,40 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect} from 'react'
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+
+
 
 
 const Contact = () => {
+
+
     useEffect(() => {
         Aos.init({duration: 1000})
 
     }, [])
 
     const form = useRef();
-
+    
   const sendEmail = (e) => {
     e.preventDefault();
+   
 
     emailjs.sendForm('service_j9wik1z', 'template_akm9ars', form.current, 'ql3fbY8DYQz35DtYm')
       .then((result) => {
-          console.log(result.text);
-          alert('message sent successfully!');
+        result.text = 'message sent sucessfully!'
+       
+        toast.success(result.text);
+       
+          
       }, (error) => {
           console.log(error.text);
-          alert('failed!, try again');
+          error.text = 'failed to send, try again'
+          toast.error(error.text);
       });
       e.target.reset()
   };
+
 
   return (
     <div id='Contact'>
@@ -68,7 +79,9 @@ const Contact = () => {
                     
                     <button type="submit">Send Message</button>
                 </form>
+                
             </div>
+            
         </div>
         <Footer/>
         
