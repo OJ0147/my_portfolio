@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {data} from '../components/data'
 import '../styles/Project.css'
 import Aos from 'aos'
 import "aos/dist/aos.css"
-import { useEffect } from 'react'
 import {CgArrowTopRight} from 'react-icons/cg'
 
 
@@ -11,6 +10,8 @@ const Project = () => {
     useEffect(() => {
         Aos.init({duration: 2000})
       }, [])
+
+
 
   return (
     <div id='Project'>

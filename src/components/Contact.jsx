@@ -30,12 +30,9 @@ const Contact = () => {
     emailjs.sendForm('service_j9wik1z', 'template_akm9ars', form.current, 'ql3fbY8DYQz35DtYm')
       .then((result) => {
         result.text = 'message sent sucessfully!'
-       
         toast.success(result.text);
        
-          
       }, (error) => {
-          console.log(error.text);
           error.text = 'failed to send, try again'
           toast.error(error.text);
       });

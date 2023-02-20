@@ -4,10 +4,10 @@ export const data = [
     {
         id: "1",
         title: "tradExpress",
-        description: "A crypto currency trading app creacted with react js. fetched data from api.",
+        description: "A crypto trading app creacted with react js, firebase, redux and api.",
         image:'/images/image-tradexpress.jpg',
-        code: 'https://github.com/OJ0147/tradexpress',
-        site: 'https://tradexpressng.netlify.app/'
+        code: 'https://github.com/OJ0147/Tradexpress-auth',
+        site: 'https://tradexpress-ng.netlify.app/'
     },
     {
         id: "2",
@@ -27,10 +27,18 @@ export const data = [
     },
     {
         id: "4",
-        title: "bookmark",
-        description: "landing page created with react js, an app for saving users favorite website",
-        image:'/images/image-bookmark.jpg',
-        code: 'https://github.com/OJ0147/bookmark',
-        site: 'https://bookmarkui.netlify.app/'
+        title: "Loyalbaze",
+        description: "A start-up landing page, fully responsive design with animation",
+        image:'/images/image-loyalbaze.jpg',
+        code: 'https://github.com/OJ0147/Loyal_baze',
+        site: 'https://loyalbaze-by-ojugo-silas.netlify.app/'
     },
+    // {
+    //     id: "5",
+    //     title: "bookmark",
+    //     description: "landing page created with react js, an app for saving users favorite website",
+    //     image:'/images/image-bookmark.jpg',
+    //     code: 'https://github.com/OJ0147/bookmark',
+    //     site: 'https://bookmarkui.netlify.app/'
+    // },
 ]

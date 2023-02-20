@@ -10,6 +10,7 @@ import djangologo from '../media/django.png';
 import gitlogo from '../media/Git1.png';
 import reduxlogo from '../media/redux.png';
 import reactlogo from '../media/reactjs.png';
+import firebaselogo from '../media/firebase.png'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { motion } from 'framer-motion';
@@ -69,6 +70,10 @@ const Technology = () => {
         {
             logo : djangologo, 
             text : 'Django'
+        },
+        {
+            logo : firebaselogo, 
+            text : 'Firebase'
         },
     ]
 
